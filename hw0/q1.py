@@ -21,7 +21,12 @@ for i in range(len(lines)):
 	arr.append(M[i][line_num])
 
 arr.sort()
-print arr
+out = open("ans1.txt",'w')
+outstr = ''.join(str(num)+',' for num in arr)
+outstr = outstr[:-1]
+out.write(outstr)
+
+
 # sort arr < 
 
 if __name__ == '__main__':
