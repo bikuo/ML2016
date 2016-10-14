@@ -1,0 +1,1 @@
+python2.7 train.py linear_regression.csv
