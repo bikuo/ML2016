@@ -138,7 +138,7 @@ if __name__ == '__main__':
 			single_data = np.reshape(single_data,(-1,1))
 			X = np.append(X, single_data ,axis = 1)  
 			Y = np.append(Y,matrix[i,pm2_5,j+9].reshape(1,1),axis = 1)
-	pdb.set_trace()
+	#pdb.set_trace()
 	#validation data
 	for i in range(len(eval_ind)):
 		for j in range(monthly):
