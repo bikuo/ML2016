@@ -62,7 +62,8 @@ clusters = 19
 km = KMeans(n_clusters=clusters, init='k-means++', max_iter=100, n_init=100, verbose=False)
 km.fit(X)
 Y = km.predict(X)
-###
+
+###############################################################################
 # generate tags for each cluster
 #
 print("Top terms per cluster:")
@@ -91,7 +92,9 @@ result = np.empty((5000000,2),dtype = 'int')
 test = pd.read_csv('check_index.csv')
 ind_pair = test.as_matrix(columns = test.columns[1:])
 
-#prediction
+###############################################################################
+# prediction
+#
 for i in range(ind_pair.shape[0]):
     if i % 50000 == 0:
         print (i)
